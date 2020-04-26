@@ -1,3 +1,5 @@
+import {handleMessageNotif} from "./chat"
+
 
 const socket = io("/");
 
