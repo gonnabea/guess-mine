@@ -8,16 +8,16 @@ const LoGGED_IN = "loggedIn";
 const nickname = localStorage.getItem(NICKNAME);
 
 const logIn = (nickname) => {
-    const socket = io("/");
-    socket.emit("setNickName", { nickname });
-}
+  window.socket = io("/");
+  window.socket.emit(window.events.setNickname, { nickname });
+};
 
 if (nickname === null) {
-    body.className = LOGGED_OUT;
-  } else {
-    body.className = LoGGED_IN;
-    logIn(nickname);
-  }
+  body.className = LOGGED_OUT;
+} else {
+  body.className = LoGGED_IN;
+  logIn(nickname);
+}
 
 const handleFormSubmit = (e) => {
   e.preventDefault();
