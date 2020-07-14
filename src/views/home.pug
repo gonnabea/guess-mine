@@ -9,9 +9,11 @@ html(lang="en")
         .loginBox
             form#jsLogin
                 input(placeholder="Whats your nickname", type="text")
-        .game#jsGame
-            h1 You are logged in
-            div#jsNotifications
+        .gameContainer#jsGame
+            .chat
+                ul.chat__messages#jsMessages
+                form.chat__form#jsSendMsg
+                    input(placeholder="Write a message", type="text")
         script.
             window.events = !{events}
         script(src="/socket.io/socket.io.js")
