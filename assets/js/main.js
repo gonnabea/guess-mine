@@ -1,3 +1,4 @@
-import "./sockets";
+/* eslint-disable prettier/prettier */
 import "./login.js";
-import "./chat";
+import "./sockets.js";
+import "./chat.js";

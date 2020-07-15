@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const { initSockets } = require("./sockets");
 
 const body = document.querySelector("body");
@@ -10,6 +11,7 @@ const LoGGED_IN = "loggedIn";
 const nickname = localStorage.getItem(NICKNAME);
 
 const logIn = (nickname) => {
+    // eslint-disable-next-line no-undef
   const socket = io("/");
   socket.emit(window.events.setNickname, { nickname });
   initSockets(socket);

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const body = document.querySelector("body");
 
 const fireNotification = (text, color) => {

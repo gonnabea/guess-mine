@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { join } from "path";
 import express from "express";
 import socketIO from "socket.io";
